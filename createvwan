@@ -1,17 +1,13 @@
 # Define variables
-$vwanName = "magoni_vwan"
-$resourceGroupName = "magoni-vwan-rg"
-$hubName = "hub1"
 $location = "australiasoutheast"
+$resourceGroupName = "magoni_vwan-rg999"
+$vwanName = "magoni_vwan999"
 
-# Create a new resource group
-New-AzResourceGroup -Name $resourceGroupName -Location $location
+New-AzResourceGroup -Location $location -Name $resourceGroupName
+$virtualWan = New-AzVirtualWan -ResourceGroupName $resourceGroupName -Name $vwanName -Location $location 
+New-AzVirtualHub -VirtualWan $virtualWan -ResourceGroupName $resourceGroupName -Name "hub1" -AddressPrefix "10.0.1.0/24" -Location $location ; New-AzVirtualHub -VirtualWan $virtualWan -ResourceGroupName $resourceGroupName -Name "hub2" -AddressPrefix "10.0.2.0/24" -Location $location 
 
-# Create Virtual WAN
-New-AzVirtualWan -Name $vwanName -ResourceGroupName $resourceGroupName -Location $location
 
-# Create Hub in the Virtual WAN
-New-AzVirtualHub -Name $hubName -ResourceGroupName $resourceGroupName -VirtualWanName $vwanName -Location $location
 
 
 
