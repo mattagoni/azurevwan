@@ -6,16 +6,16 @@
             "value": "australiasoutheast"
         },
         "networkInterfaceName": {
-            "value": "vic-vm01909"
+            "value": "magoni-vm01909"
         },
         "subnetName": {
-            "value": "Coles-Network1"
+            "value": "network1"
         },
         "virtualNetworkId": {
-            "value": "/subscriptions/f09615db-8a90-4216-b027-2d34e0827efd/resourceGroups/Coles-VicNetwork-rg/providers/Microsoft.Network/virtualNetworks/Coles-VicNetwork"
+            "value": "/subscriptions/f09615db-8a90-4216-b027-2d34e0827efd/resourceGroups/magoni-vnet-rg/providers/Microsoft.Network/virtualNetworks/vNET1"
         },
         "publicIpAddressName": {
-            "value": "coles-vic-vm01-ip"
+            "value": "magoni-vm01-ip"
         },
         "publicIpAddressType": {
             "value": "Dynamic"
@@ -24,13 +24,13 @@
             "value": "Basic"
         },
         "virtualMachineName": {
-            "value": "coles-vic-vm01"
+            "value": "magoni-vm01"
         },
         "virtualMachineComputerName": {
-            "value": "coles-vic-vm01"
+            "value": "magoni-vm01"
         },
         "virtualMachineRG": {
-            "value": "coles-vic-vm-rg"
+            "value": "magoni-vm01-rg"
         },
         "osDiskType": {
             "value": "Standard_LRS"
@@ -39,7 +39,7 @@
             "value": "Standard_D4s_v3"
         },
         "adminUsername": {
-            "value": "coles_admin"
+            "value": "magoni"
         },
         "adminPassword": {
             "value": "Password!23"
