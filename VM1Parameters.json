@@ -1,0 +1,48 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "australiasoutheast"
+        },
+        "networkInterfaceName": {
+            "value": "vic-vm01909"
+        },
+        "subnetName": {
+            "value": "Coles-Network1"
+        },
+        "virtualNetworkId": {
+            "value": "/subscriptions/f09615db-8a90-4216-b027-2d34e0827efd/resourceGroups/Coles-VicNetwork-rg/providers/Microsoft.Network/virtualNetworks/Coles-VicNetwork"
+        },
+        "publicIpAddressName": {
+            "value": "coles-vic-vm01-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        },
+        "virtualMachineName": {
+            "value": "coles-vic-vm01"
+        },
+        "virtualMachineComputerName": {
+            "value": "coles-vic-vm01"
+        },
+        "virtualMachineRG": {
+            "value": "coles-vic-vm-rg"
+        },
+        "osDiskType": {
+            "value": "Standard_LRS"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_D4s_v3"
+        },
+        "adminUsername": {
+            "value": "coles_admin"
+        },
+        "adminPassword": {
+            "value": "Password!23"
+        }
+    }
+}
