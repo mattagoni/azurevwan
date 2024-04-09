@@ -4,7 +4,7 @@
 New-AzureRmResourceGroup -Name magoni-vnet-rg -Location AustraliaSouthEast
 
 ##Create vnet1 for vwan testing
-$virtualNetwork = New-AzVirtualNetwork -ResourceGroupName magoni-vnet-rg -Location AustraliaSouthEast -Name vNET1 -AddressPrefix 10.1.0.0/16
+$virtualNetwork = New-AzVirtualNetwork -ResourceGroupName magoni-vnet-rg -Location AustraliaSouthEast -Name vNET1 -AddressPrefix 192.168.0.0/16
 $subnetConfig = Add-AzVirtualNetworkSubnetConfig -Name network1 -AddressPrefix 192.168.1.0/24 -VirtualNetwork $virtualNetwork
 $subnetConfig = Add-AzVirtualNetworkSubnetConfig -Name network2 -AddressPrefix 192.168.2.0/24 -VirtualNetwork $virtualNetwork
 $virtualNetwork | Set-AzVirtualNetwork
