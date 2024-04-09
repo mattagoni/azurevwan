@@ -1,0 +1,2 @@
+# Delete the directory and all its contents recursively
+Remove-Item -Path "/home/matthew/azurevwan/" -Recurse -Force
