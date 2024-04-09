@@ -1,7 +1,7 @@
 # Define variables
 $location = "australiasoutheast"
-$resourceGroupName = "magoni_vwan-rg999"
-$vwanName = "magoni_vwan999"
+$resourceGroupName = "magoni_vwan-rg"
+$vwanName = "magoni_vwan"
 
 New-AzResourceGroup -Location $location -Name $resourceGroupName
 $virtualWan = New-AzVirtualWan -ResourceGroupName $resourceGroupName -Name $vwanName -Location $location 
