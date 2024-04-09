@@ -30,7 +30,7 @@
             "value": "magoni-vm01"
         },
         "virtualMachineRG": {
-            "value": "magoni-vm01-rg"
+            "value": "magoni_vms-rg"
         },
         "osDiskType": {
             "value": "Standard_LRS"
